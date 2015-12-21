@@ -15,6 +15,7 @@
 		133999F71C284C54009F52C2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 133999F51C284C54009F52C2 /* LaunchScreen.storyboard */; };
 		13399A021C284C54009F52C2 /* OcSwiftTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 13399A011C284C54009F52C2 /* OcSwiftTests.m */; };
 		13399A0D1C284C54009F52C2 /* OcSwiftUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 13399A0C1C284C54009F52C2 /* OcSwiftUITests.m */; };
+		13399A1C1C284C63009F52C2 /* MyClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13399A1B1C284C63009F52C2 /* MyClass.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		13399A081C284C54009F52C2 /* OcSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OcSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		13399A0C1C284C54009F52C2 /* OcSwiftUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OcSwiftUITests.m; sourceTree = "<group>"; };
 		13399A0E1C284C54009F52C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		13399A1A1C284C63009F52C2 /* OcSwift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OcSwift-Bridging-Header.h"; sourceTree = "<group>"; };
+		13399A1B1C284C63009F52C2 /* MyClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyClass.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +113,8 @@
 				133999F51C284C54009F52C2 /* LaunchScreen.storyboard */,
 				133999F81C284C54009F52C2 /* Info.plist */,
 				133999E71C284C54009F52C2 /* Supporting Files */,
+				13399A1B1C284C63009F52C2 /* MyClass.swift */,
+				13399A1A1C284C63009F52C2 /* OcSwift-Bridging-Header.h */,
 			);
 			path = OcSwift;
 			sourceTree = "<group>";
@@ -273,6 +278,7 @@
 				133999EF1C284C54009F52C2 /* ViewController.m in Sources */,
 				133999EC1C284C54009F52C2 /* AppDelegate.m in Sources */,
 				133999E91C284C54009F52C2 /* main.m in Sources */,
+				13399A1C1C284C63009F52C2 /* MyClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,10 +419,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = OcSwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.thoughtworks.OcSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "OcSwift/OcSwift-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -424,10 +433,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = OcSwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.thoughtworks.OcSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "OcSwift/OcSwift-Bridging-Header.h";
 			};
 			name = Release;
 		};

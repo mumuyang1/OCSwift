@@ -8,8 +8,12 @@
 
 import Foundation
 
-@objc struct Constants {
-
-    static let Welcome = "kWelcomeNotif";
-
-};
+@objc class MyClass : NSObject {
+    
+    var property : String = ""
+    
+    func method () {
+    
+        print(self.property)
+    }
+}

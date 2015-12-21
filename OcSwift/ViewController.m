@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "OCSwift-Swift.h"
 
 @interface ViewController ()
 
@@ -16,7 +17,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+
+    MyClass *myClass = [[MyClass alloc] init];
+    myClass.property = @"Hello Swift!";
+    
+    [myClass method];
+
 }
 
 - (void)didReceiveMemoryWarning {
