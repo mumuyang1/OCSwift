@@ -15,5 +15,13 @@ import Foundation
     func method () {
     
         print(self.property)
+        
+        //call oc
+        let myObjClass : MyObjClass = MyObjClass()
+        myObjClass.property = "Calling ObjC class"
+        
+        print(myObjClass.property)
+        
+        myObjClass.method();
     }
 }
