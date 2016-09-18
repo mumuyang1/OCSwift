@@ -11,6 +11,8 @@
 
 @interface ViewController ()
 
+@property (nonatomic ,copy) NSString *ss;
+
 @end
 
 @implementation ViewController

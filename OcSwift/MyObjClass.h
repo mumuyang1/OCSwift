@@ -13,5 +13,6 @@
 @property (nonatomic, strong) NSString *property;
 
 -(void)method;
+-(NSInteger)add:(NSInteger) x andY:(NSInteger)y;
 
 @end

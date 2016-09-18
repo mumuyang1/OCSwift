@@ -15,4 +15,9 @@
     NSLog(@"I am in Objc method now");
 }
 
+-(NSInteger) add:(NSInteger) x andY:(NSInteger)y {
+    
+    return x+y;
+}
+
 @end

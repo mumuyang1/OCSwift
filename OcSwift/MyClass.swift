@@ -22,6 +22,7 @@ import Foundation
         
         print(myObjClass.property)
         
-        myObjClass.method();
+        myObjClass.method()
+        print(myObjClass.add(5, andY:8))
     }
 }
